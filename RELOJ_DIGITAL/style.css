@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color:#fff;
+    font-size: 16px;
+}
+
+.wrap{
+    width: 90%;
+    margin: 13% 7%;
+}
+
+.widget{
+    width: 90%;
+    margin: 2em;
+}
+
+.widget p{
+    display: inline-block;
+    line-height: 1em;
+}
+
+.fecha{
+    font-family: Oswald, Arial;
+    text-align: center;
+    font-size: 4.5em;
+    margin-bottom: 5px;
+    background: rgba(161, 157, 157, 0.11);
+}
+
+
+.reloj{
+    font-family: Oswald, Arial;
+    width: 100%;
+    padding: 20px;
+    font-size: 8em;
+    text-align: center;
+    background: rgba(161, 157, 157, 0.11);
+}
+
+.reloj .caja-segundos{
+    display: inline-block;
+}
+
+.reloj .segundos,
+.reloj .ampm{
+    font-size: 4rem;
+    display: block;
+}

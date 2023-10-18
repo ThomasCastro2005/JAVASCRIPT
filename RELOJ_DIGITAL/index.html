@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Reloj Digital Thomas</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="widget">
+            <div class="fecha">
+                <p id="diaSemana" class="diaSemana"></p>
+                <p id="dia" class="dia"></p>
+                <p>de</p>
+                <p id="mes" class="mes"></p>
+                <p>del </p>
+                <p id="year" class="year"></p>
+            </div>
+
+            <div class="reloj">
+                <p class="horas" id="horas"></p>
+                <p>:</p>
+                <p class="minutos" id="minutos"></p>
+                <p>:</p>
+                <div class="caja-segundos">
+                    <p class="ampm" id="ampm"></p>
+                    <p class="segundos" id="segundos"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="reloj.js"></script>
+</body>
+</html>
