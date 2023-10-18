@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.reloj{
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/reloj.png);
+    background-size: cover;
+    border: 1rem solid #04a396;
+    border-radius: 50%;
+    box-shadow: inset 1px 1px 20px 5px #025e56;
+}
+
+/* BEFORE Se usa para crear subElementos en el html */
+.reloj::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #03e7e7;
+    border-radius: 50%;
+    z-index: 10000;
+}
+
+.hora::before{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 70px;
+    background: #ffffffee;
+    z-index: 10;                                    
+    border-radius: 50%;
+}
+.minuto::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100px;
+    background: rgb(1, 140, 233);
+    z-index: 11;
+    border-radius: 50%;
+}
+.segundo::before{
+    content: "";
+    position: absolute;
+    width: 1.8px;
+    height: 125px;
+    background: rgb(201, 0, 0);
+    z-index: 12;
+    border-radius: 50%;
+}
+
+.hora, .minuto, .segundo{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+}
