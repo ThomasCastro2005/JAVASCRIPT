@@ -23,7 +23,7 @@ function obtenerTiempoFaltante(fechaLimite){
 
 let sonido = new Audio('./sounds/audio.mp3')
 
-const tiempoDestino ='DEC 25 2023 00:00:40 GMT-0500'
+const tiempoDestino ='DEC 25 2023 00:00:00 GMT-0500'
 
 const reproducirMusica = () =>{
     const tiempoActual = obtenerTiempoFaltante(tiempoDestino)
